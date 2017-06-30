@@ -2,12 +2,111 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="device=width-device, initial-scale=1"/>
-    <title>
-        Assignment 2
-    </title>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <title> Assignment 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Helvetica;
+        }
+
+        .container {
+            width: 100%;
+            margin-left: auto;
+        }
+
+        h2 {
+            float: right;
+            background-color: aqua;
+            width: 100px;
+            font-size: 1em;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 10px;
+
+        }
+
+        p {
+            clear: both;
+            padding: 5px;
+            text-align: justify;
+            color: aquamarine;
+            line-height: 1.2;
+            font-size: 12px;
+
+        }
+
+        .box1, .box2, .box3 {
+            background-color: #A52A2A;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: 10px;
+            width: 32.3%;
+            height: 150px;
+            float: left;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .box1, .box2 {
+                width: 45%;
+            }
+
+            .box3 {
+                width: 91%;
+                margin-top: 10px;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 767px) {
+            .box1, .box2, .box3 {
+                width: 100%;
+                margin-top: 10px;
+
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 438px) {
+            .box1, .box2, .box3 {
+                width: 100%;
+                margin-top: 10px;
+
+            }
+        }
+
+
+    </style>
+
 </head>
 <body>
+<h1>Our Menu</h1>
+<div class="container">
+    <section class="box1">
+        <h2>Chicken</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.</p>
+    </section>
+    <section class="box2">
+        <h2>Beef</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+        </p>
+    </section>
+    <section class="box3">
+        <h2>Sushi</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.</p>
+    </section>
+</div>
 
 </body>
 </html>
