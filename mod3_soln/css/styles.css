@@ -8,7 +8,7 @@ body {
 
 /*--------HEADER----------*/
 #header-nav {
-    background-color: #4cae4c;
+    background-color: #e3980e;
     border-radius: 0;
     border: 0;
 }
@@ -44,4 +44,80 @@ body {
 }
 .navbar-brand p span { /* Star-K */
     vertical-align: middle;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    color: #951C49;
+    text-align: center;
+}
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+#phone {
+    margin-top: 5px;
+}
+#phone a { /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #951C49;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+}
+
+/*------RESPONSIVE DESIGN----------*/
+
+/*******LARGE DEVICE*******/
+@media(min-width: 1200px) {
+
+}
+
+/*******MEDIUM DEVICE*******/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background: url("../images/restaurant-logo_medium.png") no-repeat;
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+/*******SMALL DEVICE*******/
+@media(min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*******EXTRA SMALL DEVICE*******/
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    .navbar-brand p {
+        text-transform: uppercase;
+        font-size: .6em;
+        margin-top: 12px;
+    }
+    .navbar-brand p img {
+        height: 20px;
+    }
+
 }
