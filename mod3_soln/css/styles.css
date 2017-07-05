@@ -79,10 +79,36 @@ body {
     clear: both;
 }
 
+/****** HOMEPAGE *******/
+.container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+    background-color: transparent;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width:100%;
+    position: relative;
+    margin-bottom: 15px;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+/*********** END HOMEPAGE **********/
+
 /*------RESPONSIVE DESIGN----------*/
 
 /*******LARGE DEVICE*******/
 @media(min-width: 1200px) {
+    .container .jumbotron {
+        background: url("../images/jumbotron_1200.jpg") no-repeat;
+        height: 675px;
+    }
 
 }
 
@@ -93,11 +119,19 @@ body {
         width: 100px;
         height: 100px;
     }
+    .container .jumbotron {
+        background: url("../images/jumbotron_992.jpg ") no-repeat;
+        height: 558px;
+    }
 
 }
 
 /*******SMALL DEVICE*******/
 @media(min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron {
+        background: url("../images/jumbotron_992.jpg ") no-repeat;
+        height: 432px;
+    }
 
 }
 
@@ -119,5 +153,31 @@ body {
     .navbar-brand p img {
         height: 20px;
     }
+    #collapsable-nav {
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+    }
+    #xs-deliver {
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    .container .jumbotron {
+        margin-top: 10px;
+        padding: 0;
 
+    }
 }
